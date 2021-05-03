@@ -37,7 +37,7 @@
   left: center;
 }
    }
-   .sidebar {
+   .sidebar { 
     margin-top: 10px;
     width: 110px; /* Ширина блока */
     padding: 0 10px; /* Отступы внутри левого блока */
@@ -100,8 +100,16 @@
 }
 .image2 {
   position: absolute;
-  top: 30px;
+  top: 25px;
   left: 30px;
+}
+.box{
+    max-width:500px; /* блок занимает ширину родителя, max-width её ограничивает */
+  min-height: 200px;
+  margin-left: auto;
+  margin-right:200px;
+  margin-top: -150px;
+  border: 1px;
 }
   </style>
  </head>
@@ -162,8 +170,42 @@
       <td style="background-color: #e5f0f6;">
         <a href="https://vk.com/mfc_siberia" target="_blank" >https://vk.com/mfc_siberia</a> <!--target="_blank"Открытие ссылки в новом окне-->
   </tbody>
-</table>  </div>
-</div>
+</table> </div>
+<div class="box">
+    <div class="span" >
+    <h3 class="block_title">Голосование</h3>
+    <p class="que">Где вы следите за нашем клубом?</p>
+    <form>
+                    <input type="checkbox" name="answers" value="748" id="vote_748" />
+  
+  <label for="vote_748" title="В сообществе  вк">
+        В сообществе ВКонтакте     </a>
+      </label><br>
+                    <input type="checkbox" name="answers" value="751" id="vote_751" />
+  
+  <label for="vote_751" title="На странице Instagram">
+        На странице Instagram     </a>
+      </label><br>
+                    <input type="checkbox" name="answers" value="752" id="vote_752" />
+  
+  <label for="vote_752" title="Присутствую на матчах">
+        Присутствую на матчах     </a>
+      </label><br>
+                    <input type="checkbox" name="answers" value="753" id="vote_753" />
+  
+  <label for="vote_753" title="Узнаю всю информацию от игроков клуба">
+        Узнаю всю информацию от игроков клуба      </a>
+      </label><br>
+                    <input type="checkbox" name="answers" value="749" id="vote_749" />
+  
+  <label for="vote_749" title="Не слежу за клубом">
+        Не слежу за клубом     </a>
+      </label><br>
+        <button>ответить</button>
+      </div>
+    </form>
+  </div>
+</div></div>
 <div class="footer">&copy; Коваль Илья</div>
 </div>
 </body>
