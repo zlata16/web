@@ -103,6 +103,29 @@
   top: 25px;
   left: 30px;
 }
+footer{background:#009999;} /*фон подвала */
+.social-icons ul{
+list-style: none;
+display: flex;
+justify-content: center;
+
+}
+.social-icons ul li a span {
+background: #4d75a2; 
+color: #fff;  
+clear: left; 
+width: 30px;
+height: 30px;
+text-align: center;
+line-height: 30px;
+border-radius: 20px;
+font-size: 13px;
+margin: 0px 2px;
+border-radius: 20px;
+font-size: 14px;
+margin: 0px 2px;
+}
+
   </style>
  </head>
    
@@ -132,7 +155,21 @@
 <br>Во втором матче против МФК "Сибирь" под руководством Ильи Коваля выйдет клуб, который начал возрождаться ФК "Торпедо" под руководством Владислава Баширова, проведём товарищеский поединок в предверии начала сезона МФЛ, который начнётся в 19:00!
 <br>Оба поединка пройдут на коробке школы №2, всех желающих поддержать свою любимую команду ждём с нетерпение по адресу ул.Достоевского, 10💪👍</li></p>
 </div>
-<div class="footer">&copy; Коваль Илья</div>
+<!-- Нужно подключение bootstrap.min.css -->
+<footer style="text-align: center;" class="py-3">
+<div class="copy-bottom-txt text-center py-3">
+<p> 
+© Мини-Футбольный клуб "СИБИРЬ"</a>
+</p>
+</div>
+<div class="social-icons mt-lg-3 mt-2 text-center">
+<ul>
+<li><a href="https://vk.com/mfc_siberia" target="_blank"><span class="fa fa-vk"></span></a></li>
+</ul>
+</div>
+</footer>
+<!-- CDN подключение иконок fontawesome -->
+<script src="https://use.fontawesome.com/df966d76e1.js"></script>
 </div>
 </body>
 </html>

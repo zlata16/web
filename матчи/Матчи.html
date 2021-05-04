@@ -103,6 +103,29 @@
   top: 25px;
   left: 30px;
 }
+footer{background:#009999;} /*фон подвала */
+.social-icons ul{
+list-style: none;
+display: flex;
+justify-content: center;
+
+}
+.social-icons ul li a span {
+background: #4d75a2; 
+color: #fff;  
+clear: left; 
+width: 30px;
+height: 30px;
+text-align: center;
+line-height: 30px;
+border-radius: 20px;
+font-size: 13px;
+margin: 0px 2px;
+border-radius: 20px;
+font-size: 14px;
+margin: 0px 2px;
+}
+
   </style>
  </head>
    
@@ -135,7 +158,21 @@
 <p><li>В субботу 17.04.2021 в зале СК "Темп" состоится товарищеская игра, между клубом из г.Юрга ➕ФК "ПЛЮС"➕ под руководством Игоря Айкина и клубом из с.Поломошное ❄МФК "СИБИРЬ"❄ под руководством Ильи Коваля.
 <br>Всех желющих поболеть за любимую команду - ждём💥</li></p>
 </div>
-<div class="footer">&copy; Коваль Илья</div>
+<!-- Нужно подключение bootstrap.min.css -->
+<footer style="text-align: center;" class="py-3">
+<div class="copy-bottom-txt text-center py-3">
+<p> 
+© Мини-Футбольный клуб "СИБИРЬ"</a>
+</p>
+</div>
+<div class="social-icons mt-lg-3 mt-2 text-center">
+<ul>
+<li><a href="https://vk.com/mfc_siberia" target="_blank"><span class="fa fa-vk"></span></a></li>
+</ul>
+</div>
+</footer>
+<!-- CDN подключение иконок fontawesome -->
+<script src="https://use.fontawesome.com/df966d76e1.js"></script>
 </div>
 </body>
 </html>
