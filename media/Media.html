@@ -13,7 +13,7 @@
     margin-top: 0; /* Отступ сверху */
    }
    .container {
-    width: 1500px; /* Ширина слоя */
+    width: 100%; /* Ширина слоя */
     margin: 0 auto; /* Выравнивнить весь блок по центру */
     background: #5CCCCC; /* Цвет фона левой колонки */
    }
@@ -103,7 +103,13 @@
   top: 25px;
   left: 30px;
 }
-footer{background:#009999;} /*фон подвала */
+footer{
+  
+    left: 0; bottom: 0; /* Левый нижний угол */
+    padding: 10px; /* Поля вокруг текста */
+    background:#009999; /* Цвет фона */
+    color: #fff; /* Цвет текста */
+    width: 99%; /* Ширина слоя */}
 .social-icons ul{
 list-style: none;
 display: flex;
@@ -125,34 +131,46 @@ border-radius: 20px;
 font-size: 14px;
 margin: 0px 2px;
 }
-
+ .scale {
+    transition: 1s; /* Время эффекта */
+   }
+   .scale:hover {
+    transform: scale(1.2); /* Увеличиваем масштаб */
+   }
   </style>
  </head>
    
   <div class="container">
-    <img class="image1" src="../медиа/10.png" width="1500" height="300" alt="background-image">
-    <img class="image2" src="../лого/логотип.png" width="250" height="250" alt="логотип">
+    <img class="image1" src="../media/10.png" width="100%" height="300" alt="background-image">
+    <img class="image2" src="../media/12.png" width="250" height="250" alt="логотип">
     <div class="header">
     <h1>МФК "СИБИРЬ"</h1>
     </div>
   </div>
    <div class="sidebar">
      <ul id="navbar">
-    <li><a href="../МФК.html">Главная</a></li>
-    <li><a href="../команда/Команда.html">Команда</a></li>
-    <li><a href="../матчи/Матчи.html">Матчи</a></li>
-    <li><a href="../контакты/Контакты.html">Контакты</a></li>
+    <li><a href="../index.html">Главная</a></li>
+    <li><a href="../komanda/Komanda.html">Команда</a></li>
+    <li><a href="../match/Match.html">Матчи</a></li>
+    <li><a href="../kontakt/Kontakt.html">Контакты</a></li>
     </ul> 
    </div>
    <div id="menu">
     <h2><strong>Архив</strong></h2>
-   <div><a href="../МФК.html">Новости</a></div>
-   <div><a href="../медиа/Медиа.html">Медиа</a></div>
-   <div><a href="../результаты/Результаты.html">Результаты</a></div>
+   <div><a href="../index.html">Новости</a></div>
+   <div><a href="../media/Media.html">Медиа</a></div>
+   <div><a href="../rez/Rez.html">Результаты</a></div>
+   <div><a href="../dr/Dr.html">Праздники в клубе</a></div>
   </div>
-   <div class="content">
-<p><li>Завершился товарищеский поединок между ФК "ОЛИМПИЕЦ" под руководством Дениса Узжина и нашей командой МФК "СИБИРЬ" под руководством Ильи Коваля со счётом 10:10 (12:14 ДВ) в нашу пользу! Спасибо команде соперника за отличную игру, а так же всем, кто поддерживал любимую команду❤</li></p>
-</div>
+<div style="text-align: center;"><p>
+        <img src="../media/1.png" alt="1" width="300" height="240" class="scale">
+        <img src="../media/2.png" alt="2" width="300" height="240" class="scale">
+        <img src="../media/3.png" alt="3" width="300" height="240" class="scale">
+        <img src="../media/4.png" alt="4" width="300" height="240" class="scale">
+        <img src="../media/5.png" alt="5" width="300" height="240" class="scale">
+        <img src="../media/6.png" alt="6" width="300" height="240" class="scale">
+    </p></div>
+
 <!-- Нужно подключение bootstrap.min.css -->
 <footer style="text-align: center;" class="py-3">
 <div class="copy-bottom-txt text-center py-3">

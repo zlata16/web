@@ -13,7 +13,7 @@
     margin-top: 0; /* Отступ сверху */
    }
    .container {
-    width: 1500px; /* Ширина слоя */
+    width: 100%; /* Ширина слоя */
     margin: 0 auto; /* Выравнивнить весь блок по центру */
     background: #5CCCCC; /* Цвет фона левой колонки */
    }
@@ -111,7 +111,13 @@
   margin-top: -150px;
   border: 1px;
 }
-footer{background:#009999;} /*фон подвала */
+footer{
+   
+    left: 0; bottom: 0; /* Левый нижний угол */
+    padding: 10px; /* Поля вокруг текста */
+    background:#009999; /* Цвет фона */
+    color: #fff; /* Цвет текста */
+    width: 99%; /* Ширина слоя */}
 .social-icons ul{
 list-style: none;
 display: flex;
@@ -136,27 +142,28 @@ margin: 0px 2px;
 
   </style>
  </head>
-
+   
   <div class="container">
-    <img class="image1" src="../медиа/10.png" width="1500" height="300" alt="background-image">
-    <img class="image2" src="../лого/логотип.png" width="250" height="250" alt="логотип">
+    <img class="image1" src="../media/10.png" width="100%" height="300" alt="background-image">
+    <img class="image2" src="../media/12.png" width="250" height="250" alt="логотип">
     <div class="header">
     <h1>МФК "СИБИРЬ"</h1>
     </div>
   </div>
    <div class="sidebar">
      <ul id="navbar">
-    <li><a href="../МФК.html">Главная</a></li>
-    <li><a href="../команда/Команда.html">Команда</a></li>
-    <li><a href="../матчи/Матчи.html">Матчи</a></li>
-    <li><a href="../контакты/Контакты.html">Контакты</a></li>
+    <li><a href="../index.html">Главная</a></li>
+    <li><a href="../komanda/Komanda.html">Команда</a></li>
+    <li><a href="../match/Match.html">Матчи</a></li>
+    <li><a href="../kontakt/Kontakt.html">Контакты</a></li>
     </ul> 
    </div>
    <div id="menu">
     <h2><strong>Архив</strong></h2>
-   <div><a href="../МФК.html">Новости</a></div>
-   <div><a href="../медиа/Медиа.html">Медиа</a></div>
-   <div><a href="../результаты/Результаты.html">Результаты</a></div>
+   <div><a href="../index.html">Новости</a></div>
+   <div><a href="../media/Media.html">Медиа</a></div>
+   <div><a href="../rez/Rez.html">Результаты</a></div>
+   <div><a href="../dr/Dr.html">Праздники в клубе</a></div>
   </div>
    <div class="content_page">
     <h3>Контакты</h3>

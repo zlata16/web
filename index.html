@@ -13,7 +13,7 @@
     margin-top: 0; /* Отступ сверху */
    }
    .container {
-    width: 1500px; /* Ширина слоя */
+    width: 100%; /* Ширина слоя */
     margin: 0 auto; /* Выравнивнить весь блок по центру */
     background: #5CCCCC; /* Цвет фона левой колонки */
    }
@@ -103,7 +103,13 @@
   top: 25px;
   left: 30px;
 }
-footer{background:#009999;} /*фон подвала */
+footer{
+   
+    left: 0; bottom: 0; /* Левый нижний угол */
+    padding: 10px; /* Поля вокруг текста */
+    background:#009999; /* Цвет фона */
+    color: #fff; /* Цвет текста */
+    width: 99%; /* Ширина слоя */}
 .social-icons ul{
 list-style: none;
 display: flex;
@@ -125,43 +131,72 @@ border-radius: 20px;
 font-size: 14px;
 margin: 0px 2px;
 }
-
+.img-float{
+float:left;
+margin:0 10px;
+border:2px solid #2F73B6;
+}
+table.iksweb{
+  width: 100%;
+  border-collapse:collapse;
+  border-spacing:0;
+  height: auto;
+}
+table.iksweb,table.iksweb td {
+  border: 0px;
+}
+table.iksweb td {
+  padding: 3px;
+  width: 30px;
+  height: 35px;
+}
   </style>
  </head>
    
   <div class="container">
-    <img class="image1" src="../медиа/10.png" width="1500" height="300" alt="background-image">
-    <img class="image2" src="../лого/логотип.png" width="250" height="250" alt="логотип">
+    <img class="image1" src="media/10.png" width="100%" height="300" alt="background-image">
+    <img class="image2" src="media/12.png" width="250" height="250" alt="логотип">
     <div class="header">
     <h1>МФК "СИБИРЬ"</h1>
     </div>
   </div>
    <div class="sidebar">
      <ul id="navbar">
-    <li><a href="../МФК.html">Главная</a></li>
-    <li><a href="../команда/Команда.html">Команда</a></li>
-    <li><a href="../матчи/Матчи.html">Матчи</a></li>
-    <li><a href="../контакты/Контакты.html">Контакты</a></li>
+    <li><a href="index.html">Главная</a></li>
+    <li><a href="komanda/Komanda.html">Команда</a></li>
+    <li><a href="match/Match.html">Матчи</a></li>
+    <li><a href="kontakt/Kontakt.html">Контакты</a></li>
     </ul> 
    </div>
    <div id="menu">
     <h2><strong>Архив</strong></h2>
-   <div><a href="../МФК.html">Новости</a></div>
-   <div><a href="../медиа/Медиа.html">Медиа</a></div>
-   <div><a href="../результаты/Результаты.html">Результаты</a></div>
+   <div><a href="index.html">Новости</a></div>
+   <div><a href="media/Media.html">Медиа</a></div>
+   <div><a href="rez/Rez.html">Результаты</a></div>
+   <div><a href="dr/Dr.html">Праздники в клубе</a></div>
   </div>
    <div class="content">
-<p><li>Завершилась товарищеская игра между ФК "ЮНОСТЬ" и МФК "СИБИРЬ" трудовой победой нашей команды со счётом 5:6, голы на счету👇
-<br>Андрея Васильева
-<br>Стаса Букина
-<br>Влада Солдатенко
-<br>Дмитрий Кашталап
-<br>Влада Долженко
-<br>Сергея Баженова
-<br>Хочу выразить огромную благодарность всем тем, кто нас поддерживал, мы играем для вас❤
-<br>Спасибо так же хочу сказать команде соперника за чистую и красивую игру! Мы принимаем ваше предложение на РЕВАНШ, о дате поговорим чуть позже💪</li></p>
+  <h3><strong>Новости</strong></h3>
+  <table class="iksweb">
+     <tbody>
+        <tr>
+          <td><a href="rez/Rez Ol.html" class="news_item"><span class="pic"><img src="media/3.png" width="200" height="160" alt="Обзор матча ФК «ОЛИМПИЕЦ» - МФК «СИБИРЬ»" align="left" /></span><span class="description"><span class="title">Обзор матча ФК «ОЛИМПИЕЦ» - МФК «СИБИРЬ»</span></a></td>
+          <td><a href="rez/Rez Yu.html" class="news_item"><span class="pic"><img src="media/4.png" width="200" height="160" alt="Обзор матча ФК «ЮНОСТЬ» - МФК «СИБИРЬ»" align="left" /></span><span class="description"><span class="title">Обзор матча ФК «ЮНОСТЬ» - МФК «СИБИРЬ»</span></a></td>
+        </tr>
+        <tr>
+          <td><a href="rez/Rez Pl.html" class="news_item"><span class="pic"><img src="media/5.png" width="200" height="160" alt="Обзор матча ФК «ПЛЮС» - МФК «СИБИРЬ»" align="left" /></span><span class="description"><span class="title">Обзор матча ФК «ПЛЮС» - МФК «СИБИРЬ»</span></a></td>
+          <td><a href="new/New 1.html" class="news_item"><span class="pic"><img src="media/7.png" width="200" height="160" alt="Новости 1" align="left" /></span><span class="description"><span class="title">Открываем новую страничку нашей истории после трудного  турнира в г.Кемерово и уже 4.05 проводим сразу два товарищеских поединка!</span></a><br></td>
+        </tr>
+        <tr>
+          <td><a href="new/New 2.html" class="news_item"><span class="pic"><img src="media/8.png" width="200" height="160" alt="Новости 2" align="left" /></span><span class="description"><span class="title">Вот и завершился турнир в г.Кемерово</span></a></td>
+          <td><a href="new/New 3.html" class="news_item"><span class="pic"><img src="media/9.png" width="200" height="160" alt="Новости 3" align="left" /></span><span class="description"><span class="title">Турнир в г.Кемерово</span></a></td>
+        </tr>
+      </tbody>
+    </table>
 </div>
-<!-- Нужно подключение bootstrap.min.css -->
+
+
+
 <footer style="text-align: center;" class="py-3">
 <div class="copy-bottom-txt text-center py-3">
 <p> 
@@ -174,7 +209,7 @@ margin: 0px 2px;
 </ul>
 </div>
 </footer>
-<!-- CDN подключение иконок fontawesome -->
+
 <script src="https://use.fontawesome.com/df966d76e1.js"></script>
 </div>
 </body>
