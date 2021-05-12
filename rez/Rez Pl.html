@@ -3,8 +3,7 @@
  <head>
   <title>МФК "СИБИРЬ"</title>
   <style>
- <body> {
-    font: 13pt Arial, Helvetica, sans-serif; /* Шрифт теста */
+    {font: 13pt Arial, Helvetica, sans-serif; /* Шрифт теста */
     background: #e1dfb9; /* Цвет фона */
    }
    h2 {
@@ -44,7 +43,9 @@
     float: left; /* Обтекание блока по правому краю */
    }
    .content {
-    margin-left: 130px; /* Отступ слева */
+    width: 87%;
+    margin: -250px;
+    margin-left: 150px;
     padding: 10px; /* Отступы внутри правого блока */
     background: #fff; /* Цвет фона правого блока */
    }
@@ -131,10 +132,74 @@ border-radius: 20px;
 font-size: 14px;
 margin: 0px 2px;
 }
-
+#mainmenu {
+    background: #444;
+    position: relative;
+    overflow: hidden;
+    height: 40px;
+    margin: 0px 0
+}
+#mainmenu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: 50%;
+    float: left;
+    font: 14px Arial, Helvetica, sans-serif;
+    height: 40px
+}
+#mainmenu ul li {
+    position: relative;
+    left: -50%;
+    float: left;
+    margin: 0 10px;
+    height: 40px
+}
+#mainmenu ul li a {
+    color: #fff;
+    display: block;
+    text-decoration: none;
+    padding: 0 15px;
+    line-height: 40px;
+}
+.widget {
+  width: 130px;
+  padding: 20px 0px;
+  background: white;
+  font-family: 'Roboto', sans-serif;
+}
+.widget-title {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #222;
+  font-size: 16px;
+  padding-left: 15px;
+  margin-bottom: 15px;
+  border-left: 2px solid #b99d61;
+}
+.widget-list {
+  padding: 0;
+  list-style: none;
+}
+.widget-list a:before {
+  content: "\2014";
+  margin-right: 14px;
+}
+.widget-list a {
+  text-decoration: none;
+  outline: none;
+  display: block;
+  padding: 6px 0; 
+  letter-spacing: 1px;
+  font-weight: 300;
+  color: #444;
+  transition: .3s linear;
+}
+.widget-list a:hover {color: #b99d61;}
   </style>
  </head>
-   
+<body>   
   <div class="container">
     <img class="image1" src="../media/10.png" width="100%"  height="300" alt="background-image">
     <img class="image2" src="../media/12.png" width="250" height="250" alt="логотип">
@@ -142,21 +207,23 @@ margin: 0px 2px;
     <h1>МФК "СИБИРЬ"</h1>
     </div>
   </div>
-   <div class="sidebar">
-     <ul id="navbar">
+   <div id="mainmenu">
+     <ul>
     <li><a href="../index.html">Главная</a></li>
     <li><a href="../komanda/Komanda.html">Команда</a></li>
     <li><a href="../match/Match.html">Матчи</a></li>
     <li><a href="../kontakt/Kontakt.html">Контакты</a></li>
     </ul> 
    </div>
-   <div id="menu">
-    <h2><strong>Архив</strong></h2>
-   <div><a href="../index.html">Новости</a></div>
-   <div><a href="../media/Media.html">Медиа</a></div>
-   <div><a href="../rez/Rez.html">Результаты</a></div>
-   <div><a href="../dr/Dr.html">Праздники в клубе</a></div>
-  </div>
+   <div class="widget">
+  <h2 class="widget-title"><strong>Архив</strong></h2>
+  <ul class="widget-list">
+    <li><a href="../index.html">Новости</a></li>
+    <li><a href="../media/Media.html">Медиа</a></li>
+    <li><a href="../rez/Rez.html">Результаты</a></li>
+    <li><a href="../dr/Dr.html">Праздники в клубе</a></li>
+  </ul>
+</div>
    <div class="content">
 <p><li>В субботу прошёл товарищеский поединок между
 ФК "ПЛЮС" и МФК "СИБИРЬ", наша команда крупно уступила в этом матче со счётом 16:5, оправдываться нет смысла, соперник был на две головы сильнее! Спасибо команде соперника за игру!
